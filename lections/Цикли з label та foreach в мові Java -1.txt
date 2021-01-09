@@ -1,0 +1,21 @@
+Цикл for each
+Цей цикл Java - різновид циклу for для ітерації колекцій і масивів. Структура for each виглядає так: 
+for (Type var : vars) {
+    statement(s)
+}
+Тут: 
+•	vars — змінна, існуючий список або масив
+•	Type var — визначення нової змінної того ж типу (Type), що і колекція vars.
+Цю конструкцію можна прочитати так: "Для кожного var з vars зробити ...". Припустимо, у нас є масив рядків з назв днів тижня. Виведемо кожен елемент цього масиву на друк: 
+public class ForExample {
+ 
+    public static void main(String[] args) {
+        String[] daysOfWeek =
+                {"Понеділок", "Вiвторок", "Середа", "Четвер", "П'ятниця", "Субота", "Неділя"};
+ 
+ 
+        for (String dayOfWeek : daysOfWeek) {
+            System.out.println(dayOfWeek);
+        }
+    }
+}

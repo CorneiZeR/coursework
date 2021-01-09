@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="statistic">
+       <attribute name="title">
+        <string>Инфо</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>По фамилии</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLineEdit" name="second_name">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="placeholderText">
+                 <string>Фамилия</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="search_student">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Поиск</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="info">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>13</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTextBrowser" name="textBrowser">
+              <property name="minimumSize">
+               <size>
+                <width>841</width>
+                <height>241</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Подробно</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QTableWidget" name="statistic_list">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="showGrid">
+               <bool>true</bool>
+              </property>
+              <property name="columnCount">
+               <number>10</number>
+              </property>
+              <column>
+               <property name="text">
+                <string>id</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>имя</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>фамилия</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>логин</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>пароль</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>курс</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>группа</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>доступ</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>тесты</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>лекции</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tests">
+       <attribute name="title">
+        <string>Тесты</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QComboBox" name="tests_list">
+              <property name="minimumSize">
+               <size>
+                <width>161</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>161</width>
+                <height>22</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="refresh_tests">
+              <property name="minimumSize">
+               <size>
+                <width>161</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>161</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Показать тест</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="delete_test">
+              <property name="text">
+               <string>Удалить тест</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="test_output"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="control">
+       <attribute name="title">
+        <string>Добавление тестов</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="add_test">
+              <property name="minimumSize">
+               <size>
+                <width>161</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>161</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Добавить</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="test_name">
+              <property name="placeholderText">
+               <string>Название теста</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="test_questions">
+            <property name="documentTitle">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>По одному вопросу на строку в виде: Вопрос1|ответ1|ответ2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

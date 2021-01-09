@@ -1,0 +1,89 @@
+Цикл з міткою (Labelled Loop)
+Java дозволяє вам прикріпити мітку (Label) циклу, це схоже на те, що ви даєте назву циклу, це корисно коли ви використовуєте багато циклів сплетених в одній програмі.
+•        Ви можете використовувати команду break labelX; щоб break цикл з міткою labelX.
+•        Ви можете використовувати команду continue labelX; щоб  continue цикл з міткою labelX.
+Синтаксис: 
+// Цикл for з міткою (Label)
+label1: for( ... )  {
+     
+}
+ 
+// Цикл  while з міткою (Label)
+label2: while ( ... )  {
+ 
+}
+ 
+// Цикл  do-while з міткою (Label)
+label3: do  {
+     
+     
+} while ( ... );
+ 
+
+Приклад використання сплетених циклів, з міткою та зазначеною командою break. 
+ package org.o7planning.tutorial.javabasic.loop;
+
+ 
+public class LabelledLoopBreakExample {
+ 
+    public static void main(String[] args) {
+ 
+        System.out.println("Labelled Loop Break example");
+ 
+        int i = 0;
+ 
+        label1: while (i < 5) {
+ 
+            System.out.println("----------------------\n");
+            System.out.println("i = " + i);
+            i++;
+ 
+            label2: for (int j = 0; j < 3; j++) {
+ 
+                System.out.println("  --> " + j);
+                if (j > 0) {
+                    // Вийти з циклу з міткою label1.
+                    break label1;
+                }
+            }
+ 
+        }
+ 
+        System.out.println("Done!");
+ 
+    }
+ 
+}
+ 
+Приклад використання сплетених циклів, з міткою та зазначеною командою continue.
+
+package org.o7planning.tutorial.javabasic.loop;
+ 
+public class LabelledLoopContinueExample {
+ 
+    public static void main(String[] args) {
+ 
+        System.out.println("Labelled Loop Continue example");
+ 
+        int i = 0;
+ 
+        label1: while (i < 5) {
+            System.out.println("outer i= " + i);
+            i++;
+ 
+            label2: for (int j = 0; j < 3; j++) {
+                if (j > 0) {
+ 
+                    continue label2;
+                }
+                if (i > 1) {
+ 
+                    continue label1;
+                }
+                System.out.println("inner i= " + i + ", j= " + j);
+            }
+ 
+        }
+    }
+ 
+}

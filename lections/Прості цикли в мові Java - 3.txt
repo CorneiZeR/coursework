@@ -1,0 +1,30 @@
+÷икл do...while
+—труктура do.. while вигл€даЇ так: 
+do {
+     statement(s)
+} while (expression);
+“ут: 
+Х	expression Ч умова циклу, вираз, €ке повинно повертати boolean значенн€.
+Х	statement(s) Ч т≥ло циклу (один чи б≥льше р€дк≥в коду).
+Ќа в≥дм≥ну в≥д while, значение expression буде обчислюватис€ п≥сл€ кожноњ ≥терац≥њ. якщо результатом виразу буде true, в черговий раз виконаЇтьс€ т≥ло циклу Ч statement(s) (€к м≥н≥мум раз). ѕриклад: 
+public class DoWhileExample {
+    public static void main(String[] args) {
+        int count = 1;
+        do {
+            System.out.println("count = " + count);
+            count ++;
+        } while (count < 11);
+    }
+}
+ 
+¬ивод: 
+count = 1
+count = 2
+count = 3
+count = 4
+count = 5
+count = 6
+count = 7
+count = 8
+count = 9
+count = 10
